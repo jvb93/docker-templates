@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/jvb93/docker-templates/master/jvb93/angular-coreui.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>WebUI</Category>
+  <Name>angular-coreui</Name>
+  <Description>
+ 
+  </Description>
+  <Overview>
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/jvb93/angular-coreui/</Registry>
+  <GitHub>https://github.com/jvb93/angular-coreuir</GitHub>
+  <Repository>jvb93/angular-coreui</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/jvb93/docker-templates/master/jvb93/images/deluge-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
