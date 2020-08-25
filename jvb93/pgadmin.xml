@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/jvb93/docker-templates/master/jvb93/pgadmin.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>API</Category>
+  <Name>pgadmin</Name>
+  <Description>
+ 
+  </Description>
+  <Overview>
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/dpage/pgadmin4/</Registry>
+  <Repository>dpage/pgadmin4</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7070</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  <Variable>
+      <Name>PGADMIN_DEFAULT_EMAIL</Name>
+      <Value>PGADMIN_DEFAULT_EMAIL</Value>
+    </Variable>
+	<Variable>
+      <Name>PGADMIN_DEFAULT_PASSWORD</Name>
+      <Value>PGADMIN_DEFAULT_PASSWORD</Value>
+    </Variable>
+  </Environment>
+  <Data>
+  </Data>
+  <ExtraParams></ExtraParams>
+</Containers>
