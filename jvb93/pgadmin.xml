@@ -34,6 +34,11 @@
     </Variable>
   </Environment>
   <Data>
+	<Volume>
+      <HostDir>/mnt/user/appdata/pgadmin</HostDir>
+      <ContainerDir>/var/lib/pgadmin</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <ExtraParams></ExtraParams>
 </Containers>
