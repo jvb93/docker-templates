@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/jvb93/docker-templates/master/jvb93/weather-frontend.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>API</Category>
+  <Name>weather-frontend</Name>
+  <Description>
+ 
+  </Description>
+  <Overview>
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/jvb1993/weather-frontend/</Registry>
+  <GitHub>https://github.com/jvb93/weather-frontend</GitHub>
+  <Repository>jvb1993/weather-frontend</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  <Variable>
+      <Name>VUE_APP_API_URL</Name>
+      <Value>http://localhost</Value>
+    </Variable>
+  </Environment>
+  <Data>
+  </Data>
+  <ExtraParams></ExtraParams>
+</Containers>
